@@ -1,0 +1,374 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Gilroy', sans-serif;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    color: #070707;
+}
+
+.container {
+    max-width: 943.61px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navigation */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-rоw {
+    padding-top: 33px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: 1px solid #828282;
+}
+
+.nav-rоw a {
+    color: #828282;
+    font-weight: 700;
+    transition: color 0.2s linear;
+}
+
+.nav-rоw a:hover {
+    color: #070707;
+}
+
+/* Header */
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.title-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-grow: 1;
+}
+
+.name {
+    font-size: 47px;
+    font-weight: 700;
+}
+    
+.lang {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+
+    transform: translate(100%, 0) rotate(-90deg);
+    transform-origin: left bottom;
+}
+
+.lang a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #828282;
+    transition: color 0.2s linear;
+}
+
+.lang a:hover {
+    color: #070707;
+}
+
+/* Burger menu */
+
+.btn-burger {
+    padding: 12px 4px 16px;
+    position: fixed;
+    top: 65px;
+    right: 30px;
+    z-index: 2;
+
+    border-radius: 4px;
+    display: none;
+    height: 20px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.burger {
+    position: relative;
+    display: block;
+    height: 4px;
+    width: 33px;
+    background-color: #000;
+    border: 0;
+}
+
+.burger::before {
+    position: absolute;
+    left: 0;
+    top: -8px;
+    content: "";
+    display: block;
+    height: 4px;
+    width: 33px;
+    background-color: #000;
+}
+
+.burger::after {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    content: "";
+    display: block;
+    height: 4px;
+    width: 33px;
+    background-color: #000;
+}
+
+.btn-burger-close .burger {
+    background-color: transparent;
+}
+
+.btn-burger-close .burger::before {
+    transform: rotate(45deg);
+    top: 0;
+    width: 27px;
+    background-color: #828282;
+}
+
+.btn-burger-close .burger::after {
+    transform: rotate(-45deg);
+    top: 0;
+    width: 27px;
+    background-color: #828282;
+}
+
+/* Mobile menu */
+
+.mobile-nav {
+    padding: 65px 28px 57px 26px;
+    position: fixed;
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0;
+    right: 0;
+    width: 375px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.nav-mobile-column {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: start;
+    gap: 68px;
+    border-bottom: 0;
+}
+
+.mobile-link {
+    font-size: 34px;
+}
+
+.mobile-nav .lang {
+    visibility: visible;
+    display: block;
+    transform: translate(100%, -200%) rotate(90deg);
+    transform-origin: left top;
+}
+
+.lang-mobile, 
+.lang-mobile a {
+    font-size: 34px;
+}
+
+/* Header cover */
+.cover {
+    margin-bottom: 85px;
+}
+
+/* Main */
+/* About me */
+
+.about-me {
+    background-color: #F6F6F6;
+}
+
+.about-me-inner {
+    margin: 0 auto;
+    padding-top: 139px;
+    padding-bottom: 88px;
+    text-align: center;
+    max-width: 485.5px;
+}
+
+.about-me h2 {
+    margin-bottom: 35px;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 42px;
+}
+
+.about-me p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.about-me p:last-child {
+    margin-bottom: 0;
+}
+
+/* Skills */
+
+.scills-inner {
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scills-inner h2 {
+    margin-bottom: 69px;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.scills-inner p {
+    margin-bottom: 83.5px;
+    font-weight: 500;
+}
+
+.skills-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    min-height: 206px;
+}
+
+/* Portfolio */
+
+.portfolio {
+    background-color: #F6F6F6;
+}
+
+.portfolio-title {
+    padding-top: 113px;
+    padding-bottom: 47px;
+    text-align: center;
+}
+.portfolio-title h2 {
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.portfolio-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-link-container {
+    padding-top: 45px;
+    padding-bottom: 99px;
+    text-align: center;
+}
+
+.card-link {
+    text-decoration: underline;
+    transition: all 0.2s linear;
+}
+
+.card-link:visited {
+    color: inherit;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+    transform: translateY(-2px);
+    text-shadow: 1px 1px 1px #828282;
+}
+
+/* Footer */
+
+.footer-inner {
+    padding-top: 114px;
+    padding-bottom: 123px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-inner h2 {
+    margin-bottom: 30px;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.footer-inner h4 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.button {
+    margin-bottom: 85px;
+    padding: 10px 26px;
+    border-radius: 50px;
+    
+    border: 3px #070707 solid;
+
+    background: #070707;
+    color: #fff;
+
+    transition: all 0.2s linear;
+}
+
+.button:hover {
+    color: #070707;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+.icons-row {
+    margin-bottom: 45px;
+    display: flex;
+}
+
+.icon {
+    transition: all 0.2s linear;
+}
+
+.icon:hover {
+    transform: scale(110%);
+}
+
+.icon + .icon {
+   margin-left: 61px;
+}
+
+.footer-inner p {
+    text-align: center;
+    font-size: 14px;
+    color: #828282;
+}
